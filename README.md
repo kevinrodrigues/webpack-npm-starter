@@ -1,8 +1,9 @@
 # webpack-npm-starter
 
-Getting started:
+##Getting started##
 
-1. npm start or webpack.
+Run the following:
+1. npm start or webpack. - Starts the project.
 2. npm run build - compiles js.
 
 Runs on http://localhost:8080/
