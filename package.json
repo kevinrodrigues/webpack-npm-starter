@@ -1,11 +1,11 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jasmine"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,16 @@
     "webpack": "^2.3.1"
   },
   "devDependencies": {
+    "jasmine": "^2.5.3",
     "webpack-dev-server": "^2.4.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinrodrigues/webpack-npm-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinrodrigues/webpack-npm-starter/issues"
+  },
+  "homepage": "https://github.com/kevinrodrigues/webpack-npm-starter#readme",
+  "description": ""
 }
