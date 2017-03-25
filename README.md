@@ -1,4 +1,4 @@
-# Simple Webpack project boilerplate
+# Simple Webpack starter project
 
 A simple and easy Webpack Project with some basic Jasmine tests already setup.
 
