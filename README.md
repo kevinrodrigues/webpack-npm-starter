@@ -10,13 +10,13 @@ A simple and easy Webpack Project with some basic Jasmine tests already setup.
 What things you need to install the software and how to install them.
 
 ```
-* [NODE](https://nodejs.org/en/download/)
+* [NODE](https://nodejs.org/en/download/) Node install instructions available here.
 
 ```
 
 ### Installing
 
-After you have node installed and you've cloned this project follow the below to get started.
+After you've node installed and you've cloned this project follow the below to get started.
 
 ```
 1. npm start
