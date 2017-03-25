@@ -1,11 +1,43 @@
-# webpack-npm-starter
+# Simple Webpack project boilerplate
 
-*Getting started*
+A simple and easy Webpack Project with some basic Jasmine tests already setup.
 
-Run the following:
-1. npm install
-2. npm start or webpack. - Starts the project.
-3. npm run build - compiles js.
-4. npm test - Runs spec files in js/spec/
+## Getting Started
 
-Runs on http://localhost:8080/
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+* [NODE](https://nodejs.org/en/download/)
+
+```
+
+### Installing
+
+After you have node installed and you've cloned this project follow the below to get started.
+
+```
+1. npm start
+3. npm test - Runs spec files in js/spec/
+
+Available on: http://localhost:8080/
+```
+
+### Running the tests
+
+Basic Jasmine tests have been setup. Running the below to compiles tests.
+
+```
+npm test - Runs spec files in js/spec/
+```
+
+## Deployment
+
+To minify code for production you can use:
+
+```
+NODE_ENV = "production"
+```
+
