@@ -1,4 +1,5 @@
-function Foo() {
+function Foo(options) {
+    this.options = options;
     this.logging = true;
 }
 
