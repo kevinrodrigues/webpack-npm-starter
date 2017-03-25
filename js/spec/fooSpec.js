@@ -10,12 +10,11 @@ describe('`Foo`', function() {
         spyOn(newFoo, 'init');
     });
 
+    it('should exist as a object', function() {
+        expect(typeof newFoo).toBe('object');
+    });
+
     describe('when invoked', function() {
-
-        it('should exist as a object', function() {
-            expect(typeof newFoo).toBe('object');
-        });
-
         it('should set logger to `true`', function() {
             expect(newFoo.logging).toBe(true);
         });
@@ -48,10 +47,12 @@ describe('`Foo`', function() {
         });
 
         describe('`startApp` prototype method', function() {
-            var newFoo;
+            var newFoo,
+                consoleLogMessage = 'App init!';
 
             beforeEach(function() {
                 newFoo = new Foo(options);
+                console.log = jasmine.createSpy('log');
             });
 
             it('should exist as a function', function() {
@@ -59,8 +60,9 @@ describe('`Foo`', function() {
             });
 
             describe('when invoked', function() {
-                it('should call the `init` method to initial the app', function() {
-                    // todo..
+                it('should call `console.log` with '+ consoleLogMessage +'', function() {
+                    newFoo.startApp(consoleLogMessage);
+                    expect(console.log).toHaveBeenCalledWith(consoleLogMessage);
                 });
             });
         })
