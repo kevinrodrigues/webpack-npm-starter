@@ -10,12 +10,17 @@ describe('`Foo`', function() {
         spyOn(newFoo, 'init');
     });
 
-    it('should exist as a object', function() {
+    it('should exist as a object & should be defined', function() {
+        expect(typeof newFoo).toBeDefined();
         expect(typeof newFoo).toBe('object');
     });
 
     describe('when invoked', function() {
-        it('should set logger to `true`', function() {
+        it('should be an instance of `Foo`', function() {
+            expect(newFoo).toEqual(jasmine.any(Object));
+        });
+
+        it('should set `logging` to `true`', function() {
             expect(newFoo.logging).toBe(true);
         });
 
@@ -31,12 +36,13 @@ describe('`Foo`', function() {
         describe('`init` method', function() {
             var newFoo;
 
-            beforeEach(function(){
+            beforeEach(function() {
                 newFoo = new Foo(options);
                 spyOn(newFoo, 'startApp');
             });
 
-            it('should exist as a function', function() {
+            it('should exist as a function & should be defined', function() {
+                expect(typeof newFoo.init).toBeDefined();
                 expect(typeof newFoo.init).toBe('function');
             });
 
@@ -55,7 +61,8 @@ describe('`Foo`', function() {
                 console.log = jasmine.createSpy('log');
             });
 
-            it('should exist as a function', function() {
+            it('should exist as a function & should be defined', function() {
+                expect(typeof newFoo.startApp).toBeDefined();
                 expect(typeof newFoo.startApp).toBe('function');
             });
 
