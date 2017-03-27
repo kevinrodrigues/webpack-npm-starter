@@ -16,8 +16,8 @@ What things you need to install the software and how to install them.
 After you've node installed and you've cloned this project follow the below to get started.
 
 ```
-1. npm start
-3. npm test - Runs spec files in js/spec/
+1. webpack - Runs a local instance/compiles JS on port 8080.
+2. npm test - Runs spec files in js/spec/
 
 Available on: http://localhost:8080/
 ```
